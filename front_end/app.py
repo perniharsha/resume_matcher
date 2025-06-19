@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import os
 
-API_URL = os.getenv("API_URL", "http://localhost:8000")
+
 st.set_page_config(page_title="Resume Matcher", layout="centered")
 
 st.title("🔍 Resume Matcher")
@@ -24,7 +24,7 @@ if st.button("Match Resume"):
             files = {"resume": uploaded_file}
             data = {"job_description": job_desc}
             try:
-                response = requests.post(f"{API_URL}/match", files=files, data=data)
+                response = requests.post("http://api:8000/match", files=files, data=data)
                 result = response.json()
                 if "match_score" in result:
                     score = result["match_score"]

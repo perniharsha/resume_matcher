@@ -1,16 +1,12 @@
 version: '3.8'
 
 services:
-  backend:
-    build:
-      context: ./backend
+  resume_matcher:
+    build: .
+    container_name: resume_matcher
     ports:
-      - "8000:8000"
-
-  frontend:
-    build:
-      context: ./frontend
-    ports:
-      - "8501:8501"
-    depends_on:
-      - backend
+      - "8501:8501"  # For Streamlit
+      - "8000:8000"  # For FastAPI API
+    volumes:
+      - .:/app
+    restart: unless-stopped
