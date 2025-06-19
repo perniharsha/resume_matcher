@@ -41,7 +41,6 @@ pip-delete-this-directory.txt
 # Docker
 *.egg-info/
 *.dockerignore
-Dockerfile
 
 # Build artifacts
 build/
