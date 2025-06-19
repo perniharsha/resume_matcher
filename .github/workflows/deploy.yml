@@ -25,13 +25,13 @@ jobs:
       - name: Build and Push Backend
         uses: docker/build-push-action@v4
         with:
-          context: ./backend
+          context: ./app_api
           push: true
           tags: yourdockerhubusername/resume-matcher-backend:latest
 
       - name: Build and Push Frontend
         uses: docker/build-push-action@v4
         with:
-          context: ./frontend
+          context: ./front_end
           push: true
           tags: yourdockerhubusername/resume-matcher-frontend:latest
