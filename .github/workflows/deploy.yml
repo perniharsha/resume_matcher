@@ -28,4 +28,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: yourdockerhubusername/resume-matcher:latest
+          tags: perni007/resume-matcher:latest
