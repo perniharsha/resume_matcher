@@ -24,7 +24,8 @@ if st.button("Match Resume"):
             files = {"resume": uploaded_file}
             data = {"job_description": job_desc}
             try:
-                response = requests.post("http://api:8000/match", files=files, data=data)
+                backend_url = os.getenv("BACKEND_URL", "https://resume-matcher-backend.onrender.com")
+                response = requests.post(f"{backend_url}/match", files=files, data=data)
                 result = response.json()
                 if "match_score" in result:
                     score = result["match_score"]

@@ -1,8 +1,20 @@
 services:
   - type: web
-    name: resume-matcher-streamlit
+    name: resume-matcher-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app_api.main:app --host 0.0.0.0 --port $PORT
+    plan: free
+    envVars:
+      - key: PORT
+        value: 8000
+
+  - type: web
+    name: resume-matcher-frontend
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: streamlit run front_end/app.py --server.port $PORT --server.address 0.0.0.0
-
     plan: free
+    envVars:
+      - key: BACKEND_URL
+        value: https://resume-matcher-backend.onrender.com
