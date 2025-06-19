@@ -1,0 +1,63 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# VS Code / IDE settings
+.vscode/
+.idea/
+
+# macOS / Linux / Windows system files
+.DS_Store
+Thumbs.db
+
+# Python dependency files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment variable files
+.env
+*.env
+
+# Streamlit specific
+.streamlit/config.toml
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Log files
+*.log
+
+# Pytest cache
+.pytest_cache/
+
+# Docker
+*.egg-info/
+*.dockerignore
+Dockerfile
+
+# Build artifacts
+build/
+dist/
+*.egg
+*.whl
+*.manifest
+*.spec
+
+# coverage reports
+htmlcov/
+.coverage
+.tox/
+.coverage.*
+
+# MyPy / Pylint / Pyre / Pytype
+.mypy_cache/
+.pyre/
+.pytype/
