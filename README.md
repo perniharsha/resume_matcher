@@ -1,5 +1,3 @@
-# resume_matcher
-
 # 🧠 Resume Matcher
 
 An AI-powered Resume Matcher app that allows recruiters or HR professionals to upload job descriptions and candidate resumes, and receive matching scores using advanced Natural Language Processing techniques.
