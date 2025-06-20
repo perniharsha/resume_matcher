@@ -84,5 +84,4 @@ Sri HarshaVardhan Perni — GitHub
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-🚀-green)
 ![Streamlit](https://img.shields.io/badge/Streamlit-UI-orange)
-![License](https://img.shields.io/badge/License-MIT-brightgreen)
 ![Docker](https://img.shields.io/badge/Docker-Ready-blue)
