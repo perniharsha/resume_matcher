@@ -14,27 +14,6 @@ An AI-powered Resume Matcher app that allows recruiters or HR professionals to u
 - Clean Streamlit frontend
 - FastAPI backend
 
----
-
-## 🗂️ Project Structure
-
-resume_matcher/
-│
-├── backend/
-│ ├── app_api/
-│ │ ├── main.py
-│ ├── requirements.txt
-│ └── start.sh
-│
-├── frontend/
-│ ├── front_end/
-│ │ ├── app.py
-│ ├── requirements.txt
-│ └── start.sh
-
-
-
----
 
 ## 🛠️ Technologies Used
 
@@ -53,18 +32,21 @@ git clone https://github.com/yourusername/resume_matcher.git
 cd resume_matcher
 ```
 ### 2️⃣ Start the Backend
+```bash
 cd backend
 python -m venv venv
 venv\Scripts\activate       
 pip install -r requirements.txt
 uvicorn app_api.main:app --host 0.0.0.0 --port 8000
-
+```
 ### 3️⃣ Start the Frontend
+```bash
 cd frontend
 python -m venv venv
 venv\Scripts\activate        
 pip install -r requirements.txt
 streamlit run front_end/app.py
+```
 
 ### 🌐 Deployment
 Currently local only due to resource limits. Can be containerized and deployed using:
